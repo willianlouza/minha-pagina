@@ -1,29 +1,10 @@
-/*#region Font initialize*/
-@font-face {
-  font-family: Nunito;
-  src: url("../assets/fonts/Nunito/Nunito-Black.ttf");
-}
-@font-face {
-  font-family: Roboto;
-  src: url("../fonts/Roboto/Roboto-Light.ttf");
-}
-@font-face {
-  font-family: Poppins-Bold;
-  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf");
-}
-@font-face {
-  font-family: Poppins;
-  src: url("../assets/fonts/Poppins/Poppins-Light.ttf");
-}
-@font-face {
-  font-family: Poppins-Black;
-  src: url("../assets/fonts/Poppins/Poppins-Black.ttf");
-}
-@font-face {
-  font-family: Quicksand;
-  src: url("../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
-}
-/*#endregion*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Poppins:wght@300;400;700&family=Quicksand:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');/* 
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
+*/
+
 /*#region Variables*/
 :root {
   --dark-color: #090619;
@@ -43,7 +24,7 @@
   font-size: 2rem;
 }
 .strong {
-  font-family: Poppins-Black;
+  font-family: "Poppins";
 }
 .icon-btn {
   background-size: cover;
@@ -77,6 +58,11 @@
 .gradient {
   background: linear-gradient(var(--gradient));
 }
+.btn.gradient{
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
 .btn {
   width: 150px;
   height: 60px;
@@ -89,10 +75,9 @@
   cursor: pointer;
 }
 .btn:hover {
-  filter: brightness(.8);
+  filter: brightness(1.1);
 }
 .btn_text {
-  font-family: Quicksand;
   font-weight: bold;
   color: var(--light-color);
 }
@@ -103,7 +88,8 @@
 }
 /*#endregion*/
 /*#region defaults*/
-html, body{
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -113,6 +99,7 @@ html {
   white-space: nowrap;
 }
 body {
+  font-family: "Roboto", sans-serif;
   background-color: var(--light-color);
   color: var(--dark-color);
 }
@@ -128,22 +115,22 @@ a {
   text-decoration: none;
 }
 h1.text-gradient {
-  font-family: Nunito;
+  font-family: "Nunito";
 }
 h1 {
-  font-family: Poppins-Bold;
+  font-family: "Poppins";
+  font-weight: bold;
 }
 h3 {
-  font-family: Poppins;
+  font-family: "Poppins";
   font-weight: bold;
 }
 p {
-  font-family: Quicksand;
-  font-weight: bold;
+  font-family: "Quicksand";
+  font-weight: regular;
 }
 span {
-  font-family: Quicksand;
-  font-weight: bold;
+  font-family: "Quicksand";
 }
 /*#region Scroll Bar*/
 ::-webkit-scrollbar {
@@ -582,21 +569,21 @@ span {
   #jogos {
     display: none;
   }
-  #openConsole{
-      display: none;
+  #openConsole {
+    display: none;
   }
 
-  .side-menu{
-      width: 60px;
-      height: 60px;
+  .side-menu {
+    width: 60px;
+    height: 60px;
   }
-  .navbar{
+  .navbar {
     justify-content: center;
   }
-  .nav-link{
-      margin-right: 15px;
+  .nav-link {
+    margin-right: 15px;
   }
-  .louza-icon{
-      margin-left: 15px;
+  .louza-icon {
+    margin-left: 15px;
   }
 }
