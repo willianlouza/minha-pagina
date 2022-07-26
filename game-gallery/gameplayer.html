@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Player</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./gameplayer.css" />
+    <script defer src="./gameplayer.js"></script>
+  </head>
+  <body>
+    <header class="side-header">
+      <div class="title-container">
+        <div class="assinatura"></div>
+      </div>
+
+      <div class="gallery">
+        <ul class="games">
+          <li class="game-container">
+            <div data-select="false" id="game-card" class="game-img next">
+              <div class="overlay"></div>
+              <div class="game-title">
+                <span>Next</span>
+              </div>
+              <div hidden class="disc"></div>
+            </div>
+          </li>
+          <li class="game-container">
+            <div data-select="false" id="game-card" class="game-img hollow">
+              <div class="overlay"></div>
+              <div class="game-title">
+                <span>Hollow Specter</span>
+              </div>
+              <div hidden class="disc"></div>
+            </div>
+          </li>
+          <li class="game-container">
+            <div data-select="false" id="game-card" class="game-img gunslinger">
+              <div class="overlay"></div>
+              <div class="game-title">
+                <span>Gunslinger</span>
+              </div>
+              <div hidden class="disc"></div>
+            </div>
+          </li>
+          <li class="game-container">
+            <div data-select="false" id="game-card" class="game-img futuman">
+              <div class="overlay"></div>
+              <div class="game-title">
+                <span>Futuman</span>
+              </div>
+              <div hidden class="disc"></div>
+            </div>
+          </li>
+          <li class="game-container">
+            <div data-select="false" id="game-card" class="game-img felpudo">
+              <div class="overlay"></div>
+              <div class="game-title">
+                <span>Felpudo</span>
+              </div>
+              <div hidden class="disc"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="iframe">
+      <div id="splash">
+        <h3>Escolha um título da galeria para jogar.</h3>
+      </div>
+      <iframe id="game-window" src=""></iframe>
+    </div>
+  </body>
+</html>

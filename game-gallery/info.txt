@@ -1,0 +1,16 @@
+IFRAME
+Width: 960;
+height: 600;
+{
+    1280:800
+    1440:900
+}
+
+Border: 0;
+Source: https://i.simmer.io/@willianlouza/;
+
+
+NEXT: next;
+Aryh: aryh-the-forgotten-spectre;
+Felpudo: felpudo;
+Futuman: futuman;

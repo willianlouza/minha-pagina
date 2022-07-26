@@ -1,0 +1,12 @@
+{
+  "help": "Mostra todos os comandos disponíveis",
+  "dark": "Ativa o tema noturno",
+  "light": "Ativa o tema claro",
+  "clear": "Limpa o console",
+  "quit": "Encerra o console",
+  "games": "Jogue alguns jogos feitos por mim disponíveis no navegador",
+  "wpp": "Abre uma conversa via WhatsApp em nova aba",
+  "github": "Vá para meu GitHub",
+  "lkdin": "Vá para meu LinkedIn",
+  "cv": "Baixe meu CV"
+}

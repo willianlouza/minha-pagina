@@ -1,0 +1,74 @@
+.draggable{
+    background-color:black;
+    border: 1px solid black;
+    width:398px;
+    height: 15px;
+    position: absolute;
+    top: -13px;
+    cursor: move;
+    border-radius:2px 2px 0 0;
+}
+#console{
+    display:none;
+    position: fixed;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width:400px;
+    height: 300px;
+    top: calc(50% - 150px);
+    left: calc(50% - 200px);
+    background-color: rgb(14, 14, 14);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .9);
+    z-index: 99;
+}
+pre{
+    font-size: .6rem;
+}
+#consoleOutputArea{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7em;
+    line-height: 20px;
+    color: rgb(2, 255, 99);
+    box-sizing: border-box;
+    padding: 20px;
+    height: 90%;
+    width: 100%;
+    overflow: scroll;
+}
+#consoleOutputArea::-webkit-scrollbar{
+    width: 10px;
+    height:100%;
+}
+#consoleOutputArea::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 0 6px rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+#consoleOutputArea::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+#consoleInputArea{
+    box-sizing: border-box;
+    width:100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 -2px 10px -5px black;
+}
+#consoleInput{
+    border: none !important;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color:rgba(85, 95, 85, 0.3);
+    padding-left: 10px;
+    color: white;
+    flex: 1 ;
+    height: 100%;
+}
+#consoleInput:focus{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
