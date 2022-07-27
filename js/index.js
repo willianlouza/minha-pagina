@@ -26,8 +26,6 @@ const colorIcons = [
   document.getElementById("js"),
   document.getElementById("unity"),
   document.getElementById("csharp"),
-  document.getElementById("ps"),
-  document.getElementById("il"),
   document.getElementById("phone"),
   document.getElementById("email"),
   document.getElementById("linkedin"),
